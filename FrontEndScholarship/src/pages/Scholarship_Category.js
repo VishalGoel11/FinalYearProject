@@ -8,7 +8,7 @@ const Scholarship_Category = ({ category }) => {
   const [scholarships, setScholarships] = useState([]);
   useEffect(() => {  
     const apiUrl = `http://scholarship-env.eba-h5npp4q2.us-east-1.elasticbeanstalk.com/scholarship/${category}`;
-    fetch(apiUrl)
+    fetch(apiUrl, {'Referrer-Policy': 'unsafe-url'})
       .then(response => response.json())
       .then(data => {
         console.log(data.scholar);

@@ -18,12 +18,13 @@ const Form = () => {
     
     notify();
     
-    fetch('http://localhost:9090/user/added', {
+    fetch('http://scholarship-env.eba-h5npp4q2.us-east-1.elasticbeanstalk.com/user/added', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
+      'Referrer-Policy': 'unsafe-url'
     })
       .then((response) => response.json())
       .then((data) => {

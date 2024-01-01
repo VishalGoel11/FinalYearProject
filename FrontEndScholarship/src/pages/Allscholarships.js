@@ -10,7 +10,7 @@ const Allscholarships = () => {
 
   useEffect(() => {
     const URL = `http://scholarship-env.eba-h5npp4q2.us-east-1.elasticbeanstalk.com/scholarship/page?pageNumber=${currentPage}`;
-    fetch(URL)
+    fetch(URL,{'Referrer-Policy': 'unsafe-url'})
       .then(response => response.json())
       .then(data => {
         console.log(data.scholar);

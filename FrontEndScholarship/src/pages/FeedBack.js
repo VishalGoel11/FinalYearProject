@@ -24,12 +24,13 @@ const handleChange=(e)=>{
 const handleSubmit=(e)=>{
     e.preventDefault();
     notify();
-    fetch('http://localhost:9090/feedback/add', {
+    fetch('http://scholarship-env.eba-h5npp4q2.us-east-1.elasticbeanstalk.com/feedback/add', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
+      'Referrer-Policy': 'unsafe-url'
     }).then((response) => response.json())
     .then((data) => {
         console.log(data);
