@@ -1,0 +1,63 @@
+.scholar_section{
+    width: 100%;
+    justify-content: space-around;  
+}
+.scholar_section h1{
+    text-align: center;
+    padding: 25px 0px;
+}
+.containerrr{
+    width: 1280px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+.allpages{
+    display: block;
+} 
+.scholar-items{
+    flex-basis: 23%; 
+    margin: 1%;
+    text-align: center;
+    padding: 20px 0px;
+    background: white;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+}
+
+.scholar-items h3{
+    padding: 10px 0px;
+}
+
+.scholar-items p{
+    padding: 10px;
+}
+
+.scholar-items button{
+    background: rgb(98, 98, 183);
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.scholar-items:hover{
+    background-color: rgb(155, 155, 193);
+}
+
+.scholar-items:hover button{
+    background: white;
+    color: blue;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .containerrr{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .scholar-items{
+        margin: 10px;
+    }
+}

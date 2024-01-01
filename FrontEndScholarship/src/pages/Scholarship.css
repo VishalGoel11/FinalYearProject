@@ -1,0 +1,19 @@
+.category-section{
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.category-containerr {
+  width: 1280px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+  .category-container {
+      flex-direction: column;
+  }
+}
+
